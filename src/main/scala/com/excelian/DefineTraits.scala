@@ -17,6 +17,7 @@ trait D{
   def introduce() : String = "Hello From D"
 }
 
+
 class Test extends C with D
 
 object DefineTraits {

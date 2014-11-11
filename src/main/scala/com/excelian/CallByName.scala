@@ -4,7 +4,7 @@ package com.excelian
  * Created by karandeep.biawat on 10/11/2014.
  */
 
-object CallByName {
+object CallByName extends App{
 
   def toBeCalled() = {
     println("called method")
@@ -22,5 +22,10 @@ object CallByName {
     println("param :" + t)
     t
   }
+
+  callByRef(toBeCalled())
+
+  println("*****************")
+  callByName(toBeCalled())
 }
 

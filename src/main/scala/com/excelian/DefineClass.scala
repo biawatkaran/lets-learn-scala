@@ -7,3 +7,8 @@ class DefineClass(param: String) {
   if(param == null) throw new Exception("No Name")
 }
 
+object RunDefineClass extends App {
+
+  val v = new DefineClass(null)
+
+}

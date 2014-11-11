@@ -4,10 +4,6 @@ package com.excelian
  * Created by karandeep.biawat on 10/11/2014.
  */
 
-class Ap {
-  def apply(in : Int) = in.toString
-}
-
 class PassFunctions {
 
   /*
@@ -32,7 +28,9 @@ class PassFunctions {
     p.toString
   }
 
-
+  def unapply(p: String) : Int = {
+    Integer.parseInt(p)
+  }
 
 
   //*******************************************************************
@@ -54,16 +52,13 @@ object TestPassFunctions {
   //*******************************************************************
 
   def main(args: Array[String]) {
-    val obj1 = new Ap
-    print("Value returned :" +obj1(12) )
 
     val obj2 = new PassFunctions
-    obj2.passFunctions(obj2.timeFlies)
+    //obj2.passFunctions(obj2.timeFlies)
 
-    obj2.passFunctionsMethod1(obj2.apply)
-    obj2.passFunctionsMethod2(obj2.apply)
-    obj2.passFunctionsInCaseObjectHasApplyMethod(obj2.apply)
+    println(obj2.passFunctionsMethod1(obj2.apply))
+    println(obj2.passFunctionsMethod2(obj2.apply))
+    println(obj2.passFunctionsInCaseObjectHasApplyMethod(obj2.apply))
 
   }
 }
-
