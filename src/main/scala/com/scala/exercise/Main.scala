@@ -1,4 +1,4 @@
-package com.excelian
+package com.scala.exercise
 
 /**
  * Created by karandeep.biawat on 11/11/2014.

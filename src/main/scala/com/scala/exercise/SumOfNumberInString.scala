@@ -1,4 +1,4 @@
-import scala.io._
+package com.scala.exercise
 
 /**
  * method(paramName : Type) : ReturnType =
