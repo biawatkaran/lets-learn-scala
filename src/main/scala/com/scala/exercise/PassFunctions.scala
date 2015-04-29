@@ -34,7 +34,7 @@ class PassFunctions {
 
 
   //*******************************************************************
-  // pass a method that accepts nothing and returns nothing
+  // pass a function that accepts nothing and returns nothing
   def passFunctions(callback: () => Unit){
     while(true){
       callback()

@@ -17,9 +17,9 @@ object OptionUsage {
   //********* util **********************
   def tryo[T](f: => T) : Option[T] ={
     try{
-      Some(f);
+      Some(f)
     } catch {
-      case _ => None
+      case _ : Throwable => None
     }
   }
 
